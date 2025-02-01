@@ -292,6 +292,16 @@ def dashboard():
 
 # Main app
 def main():
+    st.markdown("""
+    <div style='background-color: #f0f2f6; padding: 10px; border-radius: 5px; margin-bottom: 20px;'>
+        <h2 style='color: #ff4b4b; text-align: center;'>⚠️ Preview Deployment ⚠️</h2>
+        <p style='text-align: center; font-weight: bold; color: black'>
+            This is a simplified preview version of ESGFolio for streamlit free deployment. 
+            The actual Flask application is more UI Friendly.
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+
     logo = Image.open('static/FinalLogo_edited.png')
     st.sidebar.image(logo, width=200)
 
